@@ -36,19 +36,6 @@ export default function Contact() {
               ↗
             </span>
           </a>
-
-          {/* Book Strategy Session */}
-          <a
-            href="#"
-            className="border-t-[3px] border-white pt-6.5 pb-6.5 flex justify-between items-center group"
-          >
-            <h3 className="text-[18px] md:text-[20px] group-hover:opacity-70 transition-opacity">
-              Book a Strategy Session
-            </h3>
-            <span className="text-[22px] md:text-[26px] group-hover:opacity-70 transition-opacity">
-              ↗
-            </span>
-          </a>
         </div>
 
         {/* Reply Text */}

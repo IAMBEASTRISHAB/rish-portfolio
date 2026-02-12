@@ -14,7 +14,7 @@ export const projects = [
     },
     {
         id: "2",
-        title: "Library Dashboard",
+        title: "In Progress",
         type: "UI/UX Design",
         figmaLink: "https://figma.com/your-link-2",
         description: "A comprehensive dashboard for managing startup operations. Includes analytics, team management, and project tracking.",
@@ -26,7 +26,7 @@ export const projects = [
     },
     {
         id: "3",
-        title: "Webflow",
+        title: "In Progress",
         type: "UI/UX Design",
         figmaLink: "https://figma.com/your-link-3",
         description: "A comprehensive dashboard for managing startup operations. Includes analytics, team management, and project tracking.",
@@ -38,7 +38,7 @@ export const projects = [
     },
     {
         id: "4",
-        title: "Webflow",
+        title: "In Progress",
         type: "UI/UX Design",
         figmaLink: "https://figma.com/your-link-4",
         description: "A comprehensive dashboard for managing startup operations. Includes analytics, team management, and project tracking.",

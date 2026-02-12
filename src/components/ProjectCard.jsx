@@ -13,7 +13,7 @@ export default function ProjectCard({ title, image, id }) {
             className="object-cover w-full h-full"
           />
         ) : (
-          <span className="text-gray-400 text-xl">Image Placeholder</span>
+          <span className="text-gray-400 text-xl">In Progress</span>
         )}
       </div>
 
