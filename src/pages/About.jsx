@@ -11,7 +11,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 lg:gap-24">
           {/* Left: About text */}
           <div className="max-w-auto">
-            <p className="text-[18px] md:text-[20px] leading-[122%] flex flex-col gap-y-4 md:gap-y-5">
+            <p className="text-[18px] md:text-[20px] leading-[126%] flex flex-col gap-y-4 md:gap-y-5">
               <span>
                 I'm Rishab, a web designer and UI/UX designer based in West Bengal,
                 creating beautiful and useful digital products that solve real
@@ -66,7 +66,7 @@ export default function About() {
       <section className="mt-20 md:mt-20 lg:mt-30">
         {/* Services Title */}
         <h2 className="text-[60px] md:text-[80px] lg:text-[100px] leading-tight mb-8 md:mb-16 lg:mb-30">
-          Services
+          What I do
         </h2>
 
         {/* Service Items */}
