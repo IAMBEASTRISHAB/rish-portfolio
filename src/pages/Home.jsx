@@ -57,7 +57,7 @@ export default function Home() {
 
       {/* Work Section */}
       <div className="pb-30 md:pb-30 lg:pb-50">
-        <section className="flex flex-row justify-between items-center gap-24 pb-20 md:pb-20 lg:pb-30">
+        <section className="flex flex-row justify-between items-center pb-20 md:pb-20 lg:pb-30">
 
           <div className="w-full lg:max-w-130">
             <AnimatedText
