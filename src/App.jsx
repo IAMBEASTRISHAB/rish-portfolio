@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { useEffect, useRef } from "react";
+import Intro from "./components/Intro";
+import { useEffect, useRef, useState } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
@@ -14,49 +15,54 @@ import Privacy from "./pages/Privacy";
 
 function ScrollToTop({ scrollInstance }) {
   const location = useLocation();
-
   useEffect(() => {
     if (scrollInstance.current) {
-      scrollInstance.current.scrollTo(0, {
-        duration: 0,
-        disableLerp: true,
-      });
+      scrollInstance.current.scrollTo(0, { duration: 0, disableLerp: true });
     }
   }, [location.pathname, scrollInstance]);
-
   return null;
 }
 
 export default function App() {
+  const [introComplete, setIntroComplete] = useState(
+    () => sessionStorage.getItem("introSeen") === "true"
+  );
+
+  const handleIntroComplete = () => {
+    sessionStorage.setItem("introSeen", "true");
+    setIntroComplete(true);
+  };
+
   const scrollRef = useRef(null);
   const locomotiveScrollRef = useRef(null);
 
   useEffect(() => {
+    if (!introComplete) return;
+
     locomotiveScrollRef.current = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      smartphone: {
-        smooth: false,
-      },
+      lerp: 0.06,
+      multiplier: 2.5,
+      firefoxMultiplier: 120,
+      touchMultiplier: 4,
+      smartphone: { smooth: false },
+      tablet: { smooth: true, lerp: 0.06, multiplier: 2.5 },
     });
 
-    return () => {
-      if (locomotiveScrollRef.current) {
-        locomotiveScrollRef.current.destroy();
-      }
-    };
-  }, []);
+    return () => locomotiveScrollRef.current?.destroy();
+  }, [introComplete]);
 
   return (
     <BrowserRouter>
-      <ScrollToTop scrollInstance={locomotiveScrollRef} />
+      {!introComplete && <Intro onComplete={handleIntroComplete} />}
       <div
         ref={scrollRef}
         data-scroll-container
         className="bg-[#101010] min-h-screen"
       >
+        <ScrollToTop scrollInstance={locomotiveScrollRef} />
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
@@ -65,7 +71,6 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
-
         <Footer />
       </div>
     </BrowserRouter>

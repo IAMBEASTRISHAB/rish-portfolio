@@ -1,37 +1,55 @@
 import ProjectCard from "../components/ProjectCard";
 import { Link } from "react-router-dom";
-
+import AnimatedText from "../components/AnimatedText";
 
 export default function Home() {
+  const alreadySeen = sessionStorage.getItem("introSeen") === "true";
+
   return (
     <main className="max-w-400 mx-auto px-4 sm:px-6 lg:px-10 text-white">
 
       <div className="pt-20 md:pt-20 lg:pt-36 pb-20 md:pb-20 lg:pb-44">
-
         <section className="flex flex-col lg:flex-row justify-between gap-24">
 
           <div className="flex flex-col justify-between w-full lg:max-w-130">
-            <h1 className="text-[20px] md:text-[24px] lg:text-[30px] leading-tight">
+            <AnimatedText
+              tag="h1"
+              delay={alreadySeen ? 0 : 2.3}
+              className="text-[20px] md:text-[24px] lg:text-[30px] leading-tight"
+            >
               First impressions last forever.
-            </h1>
+            </AnimatedText>
 
+            {/* Mobile */}
             <div className="mt-8 lg:hidden">
-              <p className="text-white text-[20px] md:text-[24px] lg:text-[30px] leading-[122%]">
+              <AnimatedText
+                tag="p"
+                delay={alreadySeen ? 0 : 2.5}
+                className="text-white text-[20px] md:text-[24px] lg:text-[30px] leading-[122%]"
+              >
                 I design digital experiences that turn visitors into clients. Whether you're building a SaaS product, crafting a landing page, or launching an app, I create interfaces that people actually want to use and that drive real business results.
-              </p>
+              </AnimatedText>
             </div>
 
             <p className="text-white text-[14px] md:text-[16px] lg:text-[18px] leading-[124%] mt-8 lg:mt-0">
-              <span className="block">I'm currently available</span>
-              <span className="block">for new projects</span>
+              <AnimatedText tag="span" delay={alreadySeen ? 0 : 2.5} className="block">
+                I'm currently available
+              </AnimatedText>
+              <AnimatedText tag="span" delay={alreadySeen ? 0 : 2.6} className="block">
+                for new projects
+              </AnimatedText>
             </p>
-
           </div>
 
+          {/* Desktop */}
           <div className="w-full lg:max-w-140 lg:text-left hidden lg:block">
-            <p className="text-white text-[20px] md:text-[24px] lg:text-[30px] leading-[122%]">
+            <AnimatedText
+              tag="p"
+              delay={alreadySeen ? 0 : 2.5}
+              className="text-white text-[20px] md:text-[24px] lg:text-[30px] leading-[122%]"
+            >
               I design digital experiences that turn visitors into clients. Whether you're building a SaaS product, crafting a landing page, or launching an app, I create interfaces that people actually want to use and that drive real business results.
-            </p>
+            </AnimatedText>
           </div>
 
         </section>
@@ -42,21 +60,30 @@ export default function Home() {
         <section className="flex flex-row justify-between items-center gap-24 pb-20 md:pb-20 lg:pb-30">
 
           <div className="w-full lg:max-w-130">
-            <h2 className="text-[60px] md:text-[80px] lg:text-[100px] leading-tight">
+            <AnimatedText
+              tag="h2"
+              delay={alreadySeen ? 0 : 2.7}
+              className="text-[60px] md:text-[80px] lg:text-[100px] leading-tight"
+            >
               Work
-            </h2>
+            </AnimatedText>
           </div>
 
           <div className="w-auto shrink-0 text-left">
             <p className="text-white text-[14px] md:text-[16px] lg:text-[18px] leading-[124%] flex flex-col gap-y-2">
-              <span className="block">Web Design</span>
-              <span className="block">UI/UX Design</span>
-              <span className="block">Product Design</span>
+              <AnimatedText tag="span" delay={alreadySeen ? 0 : 2.7} className="block">
+                Web Design
+              </AnimatedText>
+              <AnimatedText tag="span" delay={alreadySeen ? 0 : 2.75} className="block">
+                UI/UX Design
+              </AnimatedText>
+              <AnimatedText tag="span" delay={alreadySeen ? 0 : 2.8} className="block">
+                Product Design
+              </AnimatedText>
             </p>
           </div>
 
         </section>
-
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-20 md:pb-20 lg:pb-30">
           <ProjectCard title="Cogito" id="1" image="/Project-1-mockup-1.webp" />
@@ -66,12 +93,14 @@ export default function Home() {
         </div>
 
         <div className="mt-6 text-center">
-          <Link to="/work" className="text-white text-[24px] md:text-[32px] lg:text-[40px] inline-flex items-center gap-5">
+          <Link
+            to="/work"
+            className="text-white text-[24px] md:text-[32px] lg:text-[40px] inline-flex items-center gap-5"
+          >
             More Projects
             <img src="/Vector.svg" alt="Arrow" className="w-8 h-8 md:w-10 md:h-10" />
           </Link>
         </div>
-
       </div>
 
     </main>

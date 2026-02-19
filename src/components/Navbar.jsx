@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import HireButton from "./HireButton";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +23,8 @@ export default function Navbar() {
               <li><Link to="/contact">Contact</Link></li>
             </ul>
 
-            <a
-              href="#book-call"
-              className="px-8 py-4.75 bg-[#F5F5F5] text-[20px] text-[#101010] font-medium rounded-md"
-            >
-              Hire Me
-            </a>
+            <HireButton className="px-8 py-4.75 bg-[#F5F5F5] text-[20px] text-[#101010] font-medium rounded-md" />
+
           </div>
         </div>
 
@@ -52,13 +49,10 @@ export default function Navbar() {
       {isOpen && (
         <div className="lg:hidden fixed inset-0 w-screen h-screen z-999 bg-[#101010] text-white text-[20px] flex flex-col">
           <div className="flex items-center justify-between px-4 md:px-8 py-8">
-            <a
-              href="#book-call"
+            <HireButton
               className="px-8 py-4.75 bg-[#F5F5F5] text-[18px] md:text-[20px] text-[#101010] font-medium rounded-md"
               onClick={() => setIsOpen(false)}
-            >
-              Hire Me
-            </a>
+            />
 
             <button
               onClick={() => setIsOpen(false)}
