@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
+import CustomCursor from "./components/CustomCursor";
 import { useEffect, useRef, useState } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
@@ -55,6 +56,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <CustomCursor />
       {!introComplete && <Intro onComplete={handleIntroComplete} />}
       <div
         ref={scrollRef}
