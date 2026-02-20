@@ -18,7 +18,7 @@ export default function ProjectCard({ title, image, id }) {
       </div>
 
       {/* Text */}
-      <h3 className="text-white text-[18px] md:text-[20px] mt-8 group-hover:opacity-70 transition-opacity">{title}</h3>
+      <h3 className="text-white text-[20px] md:text-[28px] mt-8 group-hover:opacity-70 transition-opacity">{title}</h3>
     </Link>
   );
 }
