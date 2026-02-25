@@ -4,11 +4,6 @@ export default function CustomCursor() {
   const dotRef = useRef(null);
   const ringRef = useRef(null);
 
-  // Don't render on touch devices
-  if (typeof window !== "undefined" && window.matchMedia("(hover: none)").matches) {
-    return null;
-  }
-
   useEffect(() => {
     const dot = dotRef.current;
     const ring = ringRef.current;
@@ -52,18 +47,18 @@ export default function CustomCursor() {
     <>
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 w-2 h-2 bg-white rounded-full pointer-events-none z-9999"
-        style={{ transform: "translate(-50%, -50%)", opacity: 1 }}
+        className="fixed top-0 left-0 w-2 h-2 bg-white rounded-full pointer-events-none z-[9999]"
+        style={{ transform: "translate(-50%, -50%)", opacity: 0 }}
       />
       <div
         ref={ringRef}
-        className="fixed top-0 left-0 rounded-full pointer-events-none z-9998"
+        className="fixed top-0 left-0 rounded-full pointer-events-none z-[9998]"
         style={{
           width: "36px",
           height: "36px",
           border: "1.5px solid rgba(255,255,255,0.6)",
           transform: "translate(-50%, -50%)",
-          opacity: 1,
+          opacity: 0,
         }}
       />
     </>
