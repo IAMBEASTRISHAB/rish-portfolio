@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="py-8 relative">
-      <div className="mx-auto w-full max-w-400 px-4 md:px-8 lg:px-10">
+      <div className="mx-auto w-full max-w-[1600px] px-4 md:px-8 lg:px-10">
         {/* Desktop */}
         <div className="hidden lg:flex items-center justify-between">
           <div className="text-[24px] font-normal text-white">
@@ -17,19 +17,18 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-10">
-            <ul className="bg-[#222222] flex items-center gap-12 text-white text-[20px] font-normal rounded-lg px-8 py-4.75">
+            <ul className="bg-[#222222] flex items-center gap-12 text-white text-[20px] font-normal rounded-lg px-8 py-[19px]">
               <li><Link to="/work">Work</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
 
-            <HireButton className="px-8 py-4.75 bg-[#F5F5F5] text-[20px] text-[#101010] font-medium rounded-md" />
-
+            <HireButton className="px-8 py-[19px] bg-[#F5F5F5] text-[20px] text-[#101010] font-medium rounded-md" />
           </div>
         </div>
 
         {/* Mobile */}
-        <div className="lg:hidden bg-[#222222] rounded-lg px-8 py-4.75 flex items-center justify-between">
+        <div className="lg:hidden bg-[#222222] rounded-lg px-8 py-[19px] flex items-center justify-between">
           <div className="text-[24px] font-normal text-white">
             <Link to="/">
               <img src="/logo.png" alt="Logo" className="w-7 h-7" />
@@ -47,23 +46,23 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden fixed inset-0 w-screen h-screen z-999 bg-[#101010] text-white text-[20px] flex flex-col">
+        <div className="lg:hidden fixed inset-0 w-screen h-screen z-[999] bg-[#101010] text-white text-[20px] flex flex-col">
           <div className="flex items-center justify-between px-4 md:px-8 py-8">
             <HireButton
-              className="px-8 py-4.75 bg-[#F5F5F5] text-[18px] md:text-[20px] text-[#101010] font-medium rounded-md"
+              className="px-8 py-[19px] bg-[#F5F5F5] text-[18px] md:text-[20px] text-[#101010] font-medium rounded-md"
               onClick={() => setIsOpen(false)}
             />
 
             <button
               onClick={() => setIsOpen(false)}
-              className="text-[18px] md:text-[20px] bg-[#222222] rounded-lg px-8 py-4.75"
+              className="text-[18px] md:text-[20px] bg-[#222222] rounded-lg px-8 py-[19px]"
             >
               Close
             </button>
           </div>
 
-          <div className="flex flex-col items-left flex-1 gap-12 pt-30">
-            <ul className="flex flex-col items-left gap-8 text-[60px] md:text-[80px] px-4 md:px-8">
+          <div className="flex flex-col items-start flex-1 gap-12 pt-[120px]">
+            <ul className="flex flex-col items-start gap-8 text-[60px] md:text-[80px] px-4 md:px-8">
               <li><Link to="/work" onClick={() => setIsOpen(false)}>Work</Link></li>
               <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
               <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>

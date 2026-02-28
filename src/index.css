@@ -22,16 +22,13 @@ body {
 }
 
 @media (hover: none) {
-
   *,
   *::before,
   *::after {
     cursor: auto !important;
   }
-}
 
-@media (hover: none) {
-  .fixed {
+  .custom-cursor {
     display: none !important;
   }
 }
