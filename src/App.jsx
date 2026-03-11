@@ -61,7 +61,7 @@ export default function App() {
       <div
         ref={scrollRef}
         data-scroll-container
-        className="bg-[#101010] min-h-screen"
+        className="bg-[#101010] min-h-screen pt-24"
       >
         <ScrollToTop scrollInstance={locomotiveScrollRef} />
         <Navbar />
