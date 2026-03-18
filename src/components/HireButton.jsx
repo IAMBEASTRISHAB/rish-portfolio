@@ -53,7 +53,7 @@ export default function HireButton({ className = "", onClick }) {
           ref={topRef}
           style={{ display: "block" }}
         >
-          Hire Me
+          Resume
         </span>
         <span
           ref={bottomRef}
@@ -65,7 +65,7 @@ export default function HireButton({ className = "", onClick }) {
             width: "100%",
           }}
         >
-          Hire Me
+         Resume
         </span>
       </span>
     </a>

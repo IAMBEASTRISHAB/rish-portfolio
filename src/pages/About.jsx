@@ -44,8 +44,7 @@ export default function About() {
               </span>
             </a>
 
-            {/* WhatsApp */}
-            <a
+            {/* <a
               href="https://wa.me/917810972979"
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +56,7 @@ export default function About() {
               <span className="text-[22px] md:text-[26px] group-hover:opacity-70 transition-opacity">
                 ↗
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
       </section>

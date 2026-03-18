@@ -12,7 +12,7 @@ export default function Contact() {
           {/* Email */}
           <a
             href="mailto:Rishab60006@gmail.com"
-            className="border-t-[3px] border-white pt-6.5 pb-6.5 flex justify-between items-center group"
+            className="border-t-[3px] border-b-[3px] border-white pt-6.5 pb-6.5 flex justify-between items-center group"
           >
             <h3 className="text-[18px] md:text-[20px] group-hover:opacity-70 transition-opacity">
               Rishab60006@gmail.com
@@ -21,8 +21,7 @@ export default function Contact() {
               ↗
             </span>
           </a>
-
-          {/* WhatsApp */}
+{/* 
           <a
             href="https://wa.me/917810972979"
             target="_blank"
@@ -35,7 +34,7 @@ export default function Contact() {
             <span className="text-[22px] md:text-[26px] group-hover:opacity-70 transition-opacity">
               ↗
             </span>
-          </a>
+          </a> */}
         </div>
 
         {/* Reply Text */}
