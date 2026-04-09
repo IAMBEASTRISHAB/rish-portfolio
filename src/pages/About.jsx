@@ -13,13 +13,12 @@ export default function About() {
           <div className="max-w-auto">
             <p className="text-[18px] md:text-[20px] leading-[126%] flex flex-col gap-y-4 md:gap-y-5">
               <span>
-                I'm Rishab, a web designer and UI/UX designer based in West Bengal,
+                I'm Rishab, a Product Designer,
                 creating beautiful and useful digital products that solve real
                 world problems.
               </span>
               <span>
-                I love football and fitness. I fluently speak English, Hindi &
-                Bengali.
+                I love football and fitness.
               </span>
               <span>
                 I practice critical thinking when creating. I believe it's

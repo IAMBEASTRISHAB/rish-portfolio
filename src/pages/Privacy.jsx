@@ -13,7 +13,7 @@ export default function Privacy() {
           </p>
 
           <p className="text-[18px] md:text-[20px] leading-[150%]">
-            This Privacy Policy explains how information is handled on this website. This website is a personal portfolio operated by Rishab Das, intended solely to showcase professional work, projects, and experience.
+            This Privacy Policy explains how information is handled on this website. This website is a personal portfolio operated by Rishab, intended solely to showcase professional work, projects, and experience.
           </p>
 
           {/* Section 1 */}
