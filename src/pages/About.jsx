@@ -18,7 +18,7 @@ export default function About() {
                 world problems.
               </span>
               <span>
-                I love football and fitness.
+                I love football and fitness and i occasionaly play games.
               </span>
               <span>
                 I practice critical thinking when creating. I believe it's

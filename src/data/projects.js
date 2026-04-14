@@ -1,15 +1,17 @@
 export const projects = [
     {
         id: "1",
-        title: "Cogito",
-        type: "UI/UX Design",
+        title: "Forma Studio",
+        type: "Web Design",
         thumbnail: "",
-        figmaLink: "",
-        description: "A mental health app that helps users track their mood, journal their thoughts, and build healthier daily habits.",
+        figmaLink: "https://www.figma.com/design/SEETO7kq0mMTLD1azykvUB/Forma-Stuido?node-id=108-233&t=dto5SKjYrqJc48N8-1",
+        description: "A minimalist architecture website focused on clear presentation, with filtering by project type and location.",
         images: [
-            "/projects/tech-1.jpg",
-            "/projects/tech-2.jpg",
-            "/projects/tech-4.jpg"
+            "/Mockup 1.webp",
+            "/Mockup 2.webp",
+            "/Mockup 3.webp",
+            "/Mockup 4.webp",
+            "/Mockup 5.webp"
         ]
     },
     {
