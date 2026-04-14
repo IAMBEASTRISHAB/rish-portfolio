@@ -3,7 +3,7 @@ export const projects = [
         id: "1",
         title: "Forma Studio",
         type: "Web Design",
-        thumbnail: "",
+        thumbnail: "thumbnail-1.webp",
         figmaLink: "https://www.figma.com/design/SEETO7kq0mMTLD1azykvUB/Forma-Stuido?node-id=108-233&t=dto5SKjYrqJc48N8-1",
         description: "A minimalist architecture website focused on clear presentation, with filtering by project type and location.",
         images: [
