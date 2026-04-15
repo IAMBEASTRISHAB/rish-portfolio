@@ -79,7 +79,7 @@ export default function Home() {
                 UI/UX Design
               </AnimatedText>
               <AnimatedText tag="span" delay={alreadySeen ? 0 : 2.8} className="block">
-                Product Design
+               No Code Dev
               </AnimatedText>
             </p>
           </div>
