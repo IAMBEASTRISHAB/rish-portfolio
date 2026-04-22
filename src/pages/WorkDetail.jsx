@@ -50,8 +50,8 @@ export default function WorkDetail() {
             )}
             {project.webflowLink && (
               <a href={project.webflowLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
-                <img src="/webflow.png" alt="Webflow" className="w-8 h-8 md:w-10 md:h-10" />
-                <span className="text-[20px] md:text-[24px] lg:text-[30px]">Webflow</span>
+                <img src="/webflow.png" alt="Webflow" className="w-14 h-8 md:w-12 md:h-10 object-contain" />
+                <span className="text-[20px] md:text-[24px] lg:text-[30px]">Webflow Link</span>
                 <img src="/Vector2.svg" alt="Arrow" className="w-4 h-4 md:w-6 md:h-6" />
               </a>
             )}

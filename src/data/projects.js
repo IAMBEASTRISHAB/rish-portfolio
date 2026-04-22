@@ -16,14 +16,15 @@ export const projects = [
     },
     {
         id: "2",
-        title: "In Progress",
-        type: "UI/UX Design",
-        figmaLink: "https://figma.com/your-link-2",
-        description: "A comprehensive dashboard for managing startup operations. Includes analytics, team management, and project tracking.",
+        title: "Buildify",
+        type: "Web Design",
+        thumbnail: "thumbnail-2.webp",
+        webflowLink: "https://learnbuildify-com.webflow.io/",
+        description: "A coding education landing page built to convert visitors into students. Designed in Figma, developed in Webflow",
         images: [
-            "/projects/tech-1.jpg",
-            "/projects/tech-2.jpg",
-            "/projects/tech-4.jpg"
+            "/Mockup 1 Project 2.webp",
+            "/Mockup 2 Project 2.webp",
+            "/Mockup 3 Project 2.webp"
         ]
     },
     {
