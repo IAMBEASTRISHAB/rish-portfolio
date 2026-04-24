@@ -17,7 +17,7 @@ export const projects = [
     {
         id: "2",
         title: "Buildify",
-        type: "Web Design",
+        type: "Web Design / No Code Dev",
         thumbnail: "thumbnail-2.webp",
         webflowLink: "https://learnbuildify-com.webflow.io/",
         description: "A coding education landing page built to convert visitors into students. Designed in Figma, developed in Webflow",
