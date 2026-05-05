@@ -88,9 +88,9 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-20 md:pb-20 lg:pb-30">
           <ProjectCard title="Forma Studio" id="1" image="/thumbnail-1.webp" />
-          <ProjectCard title="Project 2" id="2" image="" />
-          <ProjectCard title="Project 3" id="3" />
-          <ProjectCard title="Project 4" id="4" />
+          <ProjectCard title="Cloudhub" id="2" image="/thumbnail-2.webp" />
+          <ProjectCard title="Buildify" id="3" image="/thumbnail-3.webp" />
+          <ProjectCard title="In Progress" id="4" image="/thumbnail-4.webp" />
         </div>
 
         <div className="mt-6 text-center">
